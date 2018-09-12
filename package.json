@@ -1,0 +1,25 @@
+{
+  "name": "cat-adopt",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "main": "src/index.js",
+  "dependencies": {
+    "apollo-boost": "latest",
+    "graphql": "14.0.2",
+    "react": "16.4.2",
+    "react-apollo": "latest",
+    "react-dom": "16.4.2",
+    "react-scripts": "1.1.4",
+    "recompose": "latest",
+    "semantic-ui-css": "2.3.3",
+    "semantic-ui-react": "0.82.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
