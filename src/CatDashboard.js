@@ -5,16 +5,18 @@ import CatCard from "./CatCard";
 import { Card } from "semantic-ui-react";
 
 export default () => (
-  <Query query={GET_CATS}>
-    {({ loading, error, data }) => {
-      if (loading) return "loading...";
-      if (error) return `Error: ${error}`;
-
-      return (
-        <Card.Group style={{ marginTop: 20 }}>
-          {data.allCats.map(cat => <CatCard key={cat.id} cat={cat} />)}
-        </Card.Group>
-      );
-    }}
-  </Query>
+  <Card.Group style={{ marginTop: 20 }}>
+    <CatCard
+      cat={{
+        id: "fake-id",
+        name: "Mr. Cat",
+        breed: "tabby",
+        owner: null,
+        comments: [],
+        age: 1,
+        photoUrl:
+          "http://www.catster.com/wp-content/uploads/2018/01/Orange-tabby-cat-sleeping-with-eyes-closed.jpg"
+      }}
+    />
+  </Card.Group>
 );
