@@ -2,6 +2,7 @@ import React from "react";
 import { Card, Icon, Image, List } from "semantic-ui-react";
 import AdoptForm from "./AdoptForm";
 import CommentForm from "./CommentForm";
+import ReturnCatButton from "./ReturnCatButton";
 
 class CatCard extends React.Component {
   state = { expanded: false };
@@ -23,7 +24,9 @@ class CatCard extends React.Component {
           <Card.Meta>{age} years old</Card.Meta>
           <Card.Description>
             <p>Breed: {breed}</p>
-            <p>Owner: {owner}</p>
+            <p>
+              Owner: {owner} {owner && <ReturnCatButton id={id} />}{" "}
+            </p>
           </Card.Description>
         </Card.Content>
 

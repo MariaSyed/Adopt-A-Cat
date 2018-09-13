@@ -35,7 +35,7 @@ export const ADD_CAT = gql`
 `;
 
 export const ADOPT_CAT = gql`
-  mutation updateCat($id: ID!, $owner: String!) {
+  mutation updateCat($id: ID!, $owner: String) {
     updateCat(id: $id, owner: $owner) {
       id
       photoUrl
